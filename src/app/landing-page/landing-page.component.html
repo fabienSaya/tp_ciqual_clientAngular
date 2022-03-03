@@ -1,0 +1,14 @@
+<h2>Product list</h2>
+<table>
+<div *ngFor="let food of foods$ | async">
+  <tr>
+    <td>
+      {{ food.code }} - {{ food.name }}
+    </td>
+    <td>
+      <button>Voir les détails</button>
+    </td>
+  </tr>
+</div>
+</table>
+
